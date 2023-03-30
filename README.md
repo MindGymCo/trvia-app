@@ -10,3 +10,28 @@ Creating a notecard is as easy as typing in text and saving it. Users can create
 
 create a function to search local storage 
 -parse local storage to find it 
+
+
+[Project Management Board](https://trello.com/w/mindgco/account) The user stories are in note card form. Click on them to see the written description
+
+[WireFrame](/MindGym-Trivia_Wireframe.png) 
+
+## Domain Modeling
+This diagram is a high level view of our app.
+     
+         |  User |
+         
+             |
+             |
+             |
+             |
+         
+         |Notecard|
+         
+          /     \
+         /       \
+        /         \
+
+|  Category | |    Tag    |
+ 
+

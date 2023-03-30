@@ -87,3 +87,6 @@ Usability and Testablilty
 - Acceptance testing: The application should have acceptance tests that test the overall functionality of the app, such as testing that the user can successfully create, organize, and search for notecards.
 
 If you are stuck on what non-functional requirements are, do a quick online search and do some research. Write a minimum of 3-5 sentences to describe how the non-functional requirements fits into your app.
+
+
+
