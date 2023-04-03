@@ -45,13 +45,24 @@ function generateNote(term,definition){
 return note;
 }
 
-function showCardInTable() { //add in note parameter
+function showCardInTable(term,definition) { //add in note parameter
 let notecarddiv = document.getElementById('flashcardContainer')
 let notecard = document.createElement('div');
 notecard.classList.add('flashcard');
+notecard.innerText = term + "\n" + definition; // \n creates a new line
+
 notecarddiv.append(notecard)
 };
 
+let form = document.querySelector('form');
+form.addEventListener('submit',function(e){
+    e.preventDefault();
+    let textareaoneandtwo = form.querySelectorAll('textarea');
+    let term = textareaoneandtwo[0].value
+    let definition = textareaoneandtwo[1].value
+    showCardInTable(term,definition);
+
+})
 //for the div that holds the notecards
 
 /*const table = document.getElementById('');
