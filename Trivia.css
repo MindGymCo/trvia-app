@@ -1,17 +1,10 @@
-.cardTemplate{
-    border-style: solid;
-    width: 250px;
-    height: 180px;
-    border-color: grey;
-    margin-top: 35px;
-    /* border-color: blue; */
-}
+.flashcard{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
 
-.fillerTxt{
-    position: relative;
-    justify-content: center;
-    left: 95px;
-    top: 65px;
-    /* bottom: 65%; */
-    right: 65px;
+}
+#flashcardContainer{
+    display: flex;
+    column-gap: 10px;
 }
