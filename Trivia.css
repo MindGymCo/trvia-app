@@ -1,12 +1,15 @@
 .flashcard{
-    height: 50px;
-    width: 50px;
+    height: 33%;
+    width: 33%;
     background-color: aqua;
 
 }
 #flashcardContainer{
     display: flex;
     column-gap: 10px;
+    flex-wrap: wrap;
+    width: 240px;
+    row-gap: 10px;
 }
 
 .cardTemplate{
@@ -26,3 +29,4 @@
     /* bottom: 65%; */
     right: 65px;
 }
+
