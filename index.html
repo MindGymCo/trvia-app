@@ -31,13 +31,16 @@
             How to use instructions go here
         </div>
         <form id="flashCardMaker">
-            <p>Flashcard Maker</p>
-            <div>
-                <p>Question</p>
-                <textarea>Term</textarea> 
-                <p>Answer</p>
-                <textarea>description</textarea>
-            </div>
+
+            <label for="textarea1">Term:</label>
+            <br>
+            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
+            <br>
+            <label for="textarea2">Definition:</label>
+            <br>
+            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
+            <br>
+            <button type="submit">Add note</button>
         </form>
         <div id="saveCards">
             <button>add</button>
