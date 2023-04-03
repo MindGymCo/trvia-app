@@ -6,7 +6,7 @@
 
 const state = {
     allNoteCards: [],
-    noteCardSets: null,
+    notecardsets: null,
 };
 
 //notecard set constructor
@@ -27,18 +27,49 @@ noteCardSets.prototype.addNoteCard = function(term, definition){
     this.notecards.push(newNotecard);
 };
 
-noteCardSets.prototype.saveToLocalStorage = function () {
-    localStorage.setItem("notecard", JSON.stringify(Notecard));
+/*noteCardSets.prototype.saveToLocalStorage = function () {
+    localStorage.setItem("noteCardSets", JSON.stringify(state.notecardsets.notecards));
+};*/
+
+/*noteCardSets.prototype.deleteCard = function(notecards){
+    let filteredCards = this.notecards.filter(function(currentNoteCard){
+        return notecards.term !== currentNoteCard.Notecard.term
+    })
+    this.notecard = filteredCards;
+};*/
+
+
+function generateNote(term,definition){
+    let note = new Notecard (term,definition)
+    state.allNoteCards.push(note); //push newly created notecard to page 
+return note;
 }
-renderNoteCard(){
+
+function showCardInTable() { //add in note parameter
+let notecarddiv = document.getElementById('flashcardContainer')
+let notecard = document.createElement('div');
+notecard.classList.add('flashcard');
+notecarddiv.append(notecard)
+};
+
+//for the div that holds the notecards
+
+/*const table = document.getElementById('');
+table.addEventListener('click',deleteCard);*/
+
+/*function loadCardTable(){
+    const notecardTable = JSON.parse(localStorage.getItem('notecardsets')) || [];
+    state.notecardsets = new noteCardSets (Notecard)
+}*/
+
+
+/*renderNoteCard(){
+    loadCardTable();
     showCard();
     deleteCard();
-};
-function showCard() {
+}*/
 
-};
-
-function deleteCard() {
-    if (event.target.innerHTML == "imgsource")
+/*function deleteCard(event) {
+    if (event.target.getElementById == "deletebutton")
         let
-};
+};*/
