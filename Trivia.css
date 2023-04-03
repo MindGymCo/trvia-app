@@ -1,0 +1,10 @@
+.flashcard{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+
+}
+#flashcardContainer{
+    display: flex;
+    column-gap: 10px;
+}
