@@ -59,6 +59,13 @@ function deleteCardFromArray(id) {
     state.allNoteCards = filteredArray;
 }
 
+/*function searchCards(){
+    let input = document.querySelectorAll('').value //this will be where the user inputs their search
+    input = input.toLowerCase();
+    let notecards = document.querySelector('')
+
+}*/
+
 
 
 /*saveToLocalStorage = function () {
