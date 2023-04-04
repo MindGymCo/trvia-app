@@ -3,3 +3,8 @@ body {
     background-color: rgb(239, 235, 229);
 }
 
+/* Kaydee centered page - 4/6 */
+
+.main-container {
+border: 50px 100px 50px 100px;
+}
