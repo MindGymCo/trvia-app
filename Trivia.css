@@ -16,6 +16,7 @@ background-image: url(Teal_Grid_BG.png);
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+    object-fit: contain;
 }
 
 @media screen and (min-width: 640px){
@@ -41,8 +42,10 @@ background-image: url(Teal_Grid_BG.png);
 }
 
 #logo {
-    width: 500px;
+    width: 350px;
     height: auto;
+    object-fit: fill;
+
 }
 
 #search {
