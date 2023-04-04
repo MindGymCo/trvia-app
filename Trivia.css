@@ -18,9 +18,16 @@ background-image: url(Teal_Grid_BG.png);
 }
 
 .leftSide {
-
+    flex: 1;
 }
 
 .rightSide {
-    
+    flex: 0 1 300px;
+
+}
+
+@media screen and (min-width: 640px){
+.flexBox-main {
+    display: flex;
+}
 }
