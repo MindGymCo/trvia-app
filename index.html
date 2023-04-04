@@ -13,47 +13,51 @@
     <!-- Chyniece made changes 4/1 -- HTML layout-->
     <main>
 
-        <div class="content">
-           <div class="flexBox-main">
-            <div class="leftSide">
-                <div class="leftFlexHeader">
-                    <!-- Kaydee added Logo 4/3 -->
-                <div class="logo">
-                    <img src="logo.png" alt="MindGym Logo" id="logo">
-                </div>
-                <!-- Kaydee added Search Bar 4/3 -->
-                <div id="search">
-                    <h3>Search Bar</h3>
-                    <input type="text" name="" id="searchBar">
-                </div>
-                </div>
-                <div id="flashcardContainer">
-                    flashcards go here
-                </div>
-                <div id="saveRemove">
-                    <button>save button</button>
-                    <button>remove button</button>
-                </div>
-            </div>
-            <div class="rightSide">
-                <div id="instructions">
-                    How to use instructions go here
-                </div>
-                <div id="flashCardMaker">
-                    <p>Flashcard Maker</p>
-                    <div>
-                        <p>Question</p>
-                        <textarea>Term</textarea>
-                        <p>Answer</p>
-                        <textarea>description</textarea>
-                    </div>
-                </div>
-                <div id="saveCards">
-                    <button>add note card</button>
-                </div>
-            </div>
-           </div>
+        <div id="logo">
+            <img src="logo.png" alt="MindGym Logo">
         </div>
+        <div id="search">
+            search bar goes here
+        </div>
+        <div id="flashcardContainer">
+            <!--note cards here, made in JS-->
+        </div>
+        <div id="saveRemove">
+            <button>save button</button>
+            <button>remove button</button>
+        </div>
+        <aside>
+        <div id="instructions">
+            How to use instructions go here
+        </div>
+        <form id="flashCardMaker">
+
+            <label for="textarea1">Term:</label>
+            <br>
+            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
+            <br>
+            <label for="textarea2">Definition:</label>
+            <br>
+            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
+            <br>
+            <button type="submit">Add note</button>
+        </form>
+        </aside>
+        <div id="saveCards">
+            <button>add</button>
+        </div>
+
+
+
+        
+    <div class="noteCard">
+        <div class="termSpace">
+            <span class="termTxt"> Term </span>
+        </div>
+    <div class="cardTemplate"> 
+        <p class="fillerTxt">Text Here</p>
+    </div>
+    </div>
 
     </main>
 
@@ -62,4 +66,4 @@
 
 
 
-    <script src="trivia.js"></script>
+    <script src="Trivia.js"></script>
