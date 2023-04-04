@@ -5,7 +5,7 @@ background-image: url(Teal_Grid_BG.png);
 
 /* Kaydee centered page - 4/6 */
 
-.main-container {
+.content {
     height: 50%;
     width: 60%;
     background-color: rgb(239, 235, 229);
@@ -15,4 +15,12 @@ background-image: url(Teal_Grid_BG.png);
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.leftSide {
+
+}
+
+.rightSide {
+    
 }
