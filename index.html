@@ -13,51 +13,61 @@
     <!-- Chyniece made changes 4/1 -- HTML layout-->
     <main>
 
-        <div id="logo">
-            <img src="logo.png" alt="MindGym Logo">
-        </div>
-        <div id="search">
-            search bar goes here
-        </div>
-        <div id="flashcardContainer">
-            <!--note cards here, made in JS-->
-        </div>
-        <div id="saveRemove">
-            <button>save button</button>
-            <button>remove button</button>
-        </div>
-        <aside>
-        <div id="instructions">
-            How to use instructions go here
-        </div>
-        <form id="flashCardMaker">
-
-            <label for="textarea1">Term:</label>
-            <br>
-            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
-            <br>
-            <label for="textarea2">Definition:</label>
-            <br>
-            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
-            <br>
-            <button type="submit">Add note</button>
-        </form>
-        </aside>
-        <div id="saveCards">
-            <button>add</button>
-        </div>
+        <div class="content">
+            <div class="flexBox-main">
+                <div class="leftSide">
+                    <div class="leftFlexHeader">
+                        <div class="logo">
+                            <img src="logo.png" alt="MindGym Logo" id="logo">
+                        </div>
+                        <div id="search">
+                            search bar goes here
+                        </div>
+                    </div>
+                    <div id="flashcardContainer">
+                        <!--note cards here, made in JS-->
+                    </div>
+                    <div id="saveRemove">
+                        <button>save button</button>
+                        <button>remove button</button>
+                    </div>
+                </div>
 
 
+                <!-- the right side is below this comment -->
+                <div class="rightSide">
 
-        
-    <div class="noteCard">
-        <div class="termSpace">
-            <span class="termTxt"> Term </span>
-        </div>
-    <div class="cardTemplate"> 
-        <p class="fillerTxt">Text Here</p>
-    </div>
-    </div>
+                    <aside>
+                        <div id="instructions">
+                            How to use instructions go here
+                        </div>
+                        <form id="flashCardMaker">
+
+                            <label for="textarea1">Term:</label>
+                            <br>
+                            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
+                            <br>
+                            <label for="textarea2">Definition:</label>
+                            <br>
+                            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
+                            <br>
+                            <button type="submit">Add note</button>
+                        </form>
+                    </aside>
+
+
+
+
+                    <!-- <div class="noteCard">
+                        <div class="termSpace">
+                            <span class="termTxt"> Term </span>
+                        </div>
+                        <div class="cardTemplate">
+                            <p class="fillerTxt">Text Here</p>
+                        </div> -->
+
+                </div>
+            </div>
 
     </main>
 
