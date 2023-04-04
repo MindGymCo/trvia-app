@@ -17,8 +17,16 @@ background-image: url(Teal_Grid_BG.png);
     margin-right: auto;
 }
 
+@media screen and (min-width: 640px){
+.flexBox-main {
+    display: flex;
+}
+}
+
 .leftSide {
     flex: 1;
+    align-items: center;
+    
 }
 
 .rightSide {
@@ -26,8 +34,26 @@ background-image: url(Teal_Grid_BG.png);
 
 }
 
-@media screen and (min-width: 640px){
-.flexBox-main {
+.leftFlexHeader{
     display: flex;
+    justify-content: space-evenly
 }
+
+#logo {
+    width: 500px;
+    height: auto;
+}
+
+#search {
+    margin-top: 30%;
+}
+
+#flashcardContainer {
+    margin-top: 2%;
+    margin-left: 50%;
+}
+
+#saveRemove{
+    margin-top: 2%;
+    margin-left: 50%;
 }
