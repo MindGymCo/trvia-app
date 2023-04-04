@@ -1,3 +1,64 @@
+
+/* Kaydee added body color - 4/6 */
+body {
+background-image: url(Teal_Grid_BG.png);
+}
+
+/* Kaydee centered page - 4/6 */
+
+.content {
+    height: 50%;
+    width: 60%;
+    background-color: rgb(239, 235, 229);
+    padding: 5%;
+    border: solid 5px #000000;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 640px){
+.flexBox-main {
+    display: flex;
+}
+}
+
+.leftSide {
+    flex: 1;
+    align-items: center;
+    
+}
+
+.rightSide {
+    flex: 0 1 300px;
+
+}
+
+.leftFlexHeader{
+    display: flex;
+    justify-content: space-evenly
+}
+
+#logo {
+    width: 500px;
+    height: auto;
+}
+
+#search {
+    margin-top: 30%;
+}
+
+#flashcardContainer {
+    margin-top: 2%;
+    margin-left: 50%;
+}
+
+#saveRemove{
+    margin-top: 2%;
+    margin-left: 50%;
+}
+
 .flashcard{
     height: 33%;
     width: 33%;
