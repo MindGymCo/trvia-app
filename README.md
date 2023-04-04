@@ -26,12 +26,12 @@ This diagram is a high level view of our app.
              |
              |
          
-         |Notecard|
+         |Notecards|
          
           /     \
          /       \
         /         \
 
-|  Category | |    Tag    |
+|  Term | |    Definition    |
  
 
