@@ -66,10 +66,6 @@ function deleteCardFromArray(id) {
 };
 saveToLocalStorage(); -- save filtered array to local storage, save new note card to local storage */
 
-
-
-
-
 /*noteCardSets.prototype.addNoteCard = function (term, definition) {
     //this instance method creates a new notecard and adds it to this.notecards
     let newNotecard = new Notecard(term, definition)
