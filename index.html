@@ -23,12 +23,13 @@
         </div>
         
         <div id="flashcardContainer">
-            flashcards go here
+            <!--note cards here, made in JS-->
         </div>
         <div id="saveRemove">
             <button>save button</button>
             <button>remove button</button>
         </div>
+        <aside>
         <div id="instructions">
             How to use instructions go here
         </div>
@@ -41,9 +42,34 @@
                 <textarea>description</textarea>
             </div>
         </div>
+        <form id="flashCardMaker">
+
+            <label for="textarea1">Term:</label>
+            <br>
+            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
+            <br>
+            <label for="textarea2">Definition:</label>
+            <br>
+            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
+            <br>
+            <button type="submit">Add note</button>
+        </form>
+        </aside>
         <div id="saveCards">
-            <button>add note card</button>
+            <button>add</button>
         </div>
+
+
+
+        
+    <div class="noteCard">
+        <div class="termSpace">
+            <span class="termTxt"> Term </span>
+        </div>
+    <div class="cardTemplate"> 
+        <p class="fillerTxt">Text Here</p>
+    </div>
+    </div>
 
     </main>
 
@@ -52,4 +78,4 @@
 
 
 
-    <script src="trivia.js"></script>
+    <script src="Trivia.js"></script>

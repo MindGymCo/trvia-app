@@ -1,0 +1,33 @@
+.flashcard{
+    height: 33%;
+    width: 33%;
+    background-color: aqua;
+
+}
+#flashcardContainer{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    width: 240px;
+    row-gap: 10px;
+}
+
+.cardTemplate{
+    border-style: solid;
+    width: 250px;
+    height: 180px;
+    border-color: grey;
+    margin-top: 35px;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.1EyYHL_TBL3XZFbnehzVJQHaE8&pid=Api&P=0");
+    /* border-color: blue; */
+}
+
+.fillerTxt{
+    position: relative;
+    justify-content: center;
+    left: 95px;
+    top: 65px;
+    /* bottom: 65%; */
+    right: 65px;
+}
+
