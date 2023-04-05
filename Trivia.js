@@ -79,7 +79,7 @@ searchDoc.addEventListener('click', function (e) {
 
 
 
-
+//test
 
 /*saveToLocalStorage = function () {
     localStorage.setItem("noteCardSets", JSON.stringify(state.notecardsets.notecards));
@@ -94,15 +94,3 @@ saveToLocalStorage(); -- save filtered array to local storage, save new note car
 };*/
 
 
-
-
-/*function generateNote(term, definition) {
-    let note = new Notecard(term, definition)
-    state.allNoteCards.push(note); //push newly created notecard to page 
-    return note;
-}*/
-/*const noteCardSets = function (notecards) {
-    //this.notecards is an array of notecard instances
-    this.notecards = notecards;
-
-};*/
