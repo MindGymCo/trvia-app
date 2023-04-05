@@ -89,3 +89,26 @@ background-image: url(/img/Teal_Grid_BG.png);
     /* bottom: 65%; */
     right: 65px;
 }
+
+#h1FCMaker, #moveInstruct {
+    margin-left: 30px;
+}
+
+#instructH3 {
+    margin-left: 30px;
+}
+
+#instructPara {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.instructions {
+    background-color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
