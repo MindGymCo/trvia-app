@@ -24,7 +24,7 @@ function showCardInTable(term, definition, id) { //add in note parameter
     notecarddiv.append(notecard);
 };
 
-let form = document.querySelector('form');
+let form = document.getElementById('flashCardMaker');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     let textareaoneandtwo = form.querySelectorAll('textarea');
@@ -49,6 +49,7 @@ function deleteCard(event) {
     }
     
 };
+
 function deleteCardFromArray(id) {
     let filteredArray = state.allNoteCards.filter(function (currentNoteCard) {
         if (currentNoteCard.id == id) {
@@ -59,12 +60,14 @@ function deleteCardFromArray(id) {
     state.allNoteCards = filteredArray;
 }
 
-/*function searchCards(){
+const searchDoc = document.getElementById('searchbar')
+searchDoc.addEventListener()
+function searchCards(){
     let input = document.querySelectorAll('').value //this will be where the user inputs their search
     input = input.toLowerCase();
     let notecards = document.querySelector('')
+}
 
-}*/
 
 
 
