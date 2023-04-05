@@ -33,7 +33,7 @@ form.addEventListener('submit', function (e) {
     let newNotecard = new Notecard(term, definition);
     state.allNoteCards.push(newNotecard);
     showCardInTable(term, definition, newNotecard.id);
-    
+
 })
 
 
@@ -47,7 +47,7 @@ function deleteCard(event) {
         deleteCardFromArray(noteCardElement.id);
         noteCardElement.remove(); //removes the HTMl element from the page
     }
-    
+
 };
 
 function deleteCardFromArray(id) {
@@ -60,13 +60,23 @@ function deleteCardFromArray(id) {
     state.allNoteCards = filteredArray;
 }
 
-const searchDoc = document.getElementById('searchbar')
-searchDoc.addEventListener()
-function searchCards(){
-    let input = document.querySelectorAll('').value //this will be where the user inputs their search
-    input = input.toLowerCase();
-    let notecards = document.querySelector('')
-}
+const searchDoc = document.querySelector('#searchbutton')
+searchDoc.addEventListener('click', function (e) {
+    e.preventDefault();
+
+   const userInput = document.querySelector('#searchbar').value.toLowerCase(); //this will be where the user inputs their search
+    let searchOptions = document.querySelectorAll('.flashcard')
+    for (let i = 0; i < searchOptions.length; i++) {
+        //console.log(searchOptions[i].innerText.includes(userInput),userInput) 
+
+       if (searchOptions[i].innerText.includes(userInput)) {
+            console.log(searchOptions[i].innerText)
+            searchOptions[i].style.borderColor = 'yellow';
+            console.log(searchOptions[i].style)
+        }
+    }
+});
+
 
 
 
