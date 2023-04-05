@@ -64,6 +64,7 @@ background-image: url(/img/Teal_Grid_BG.png);
 
 .flashcard{
     display: flex;
+    /* flex-direction: column; */
     border-style: solid;
     width: 25%;
     height: 100px;
@@ -71,7 +72,7 @@ background-image: url(/img/Teal_Grid_BG.png);
     margin-top: 35px;
     background-image: url("img/notecard.jpg");
 
-
+    
 }
 #flashcardContainer{
     display: flex;
@@ -111,4 +112,3 @@ background-image: url(/img/Teal_Grid_BG.png);
     border-style: solid;
     border-color: black;
 }
-
