@@ -77,20 +77,21 @@ searchDoc.addEventListener('click', function (e) {
     }
 });
 
+function printNoteCards(table){
+    var printContents = table.innerHTML;
+    var originalContent = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+
+    document.body.innerHTML = originalContent;
+}
 
 
-//test
 
 /*saveToLocalStorage = function () {
     localStorage.setItem("noteCardSets", JSON.stringify(state.notecardsets.notecards));
 };
 saveToLocalStorage(); -- save filtered array to local storage, save new note card to local storage */
 
-/*noteCardSets.prototype.addNoteCard = function (term, definition) {
-    //this instance method creates a new notecard and adds it to this.notecards
-    let newNotecard = new Notecard(term, definition)
-    this.notecards.push(newNotecard);
-    state.allNoteCards.push(newNotecard); //adds the new notecard to the allnotecards array
-};*/
 
 
