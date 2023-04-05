@@ -24,7 +24,7 @@ function showCardInTable(term, definition, id) { //add in note parameter
     notecarddiv.append(notecard);
 };
 
-let form = document.querySelector('form');
+let form = document.getElementById('flashCardMaker');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     let textareaoneandtwo = form.querySelectorAll('textarea');
@@ -33,7 +33,7 @@ form.addEventListener('submit', function (e) {
     let newNotecard = new Notecard(term, definition);
     state.allNoteCards.push(newNotecard);
     showCardInTable(term, definition, newNotecard.id);
-    
+
 })
 
 
@@ -47,8 +47,9 @@ function deleteCard(event) {
         deleteCardFromArray(noteCardElement.id);
         noteCardElement.remove(); //removes the HTMl element from the page
     }
-    
+
 };
+
 function deleteCardFromArray(id) {
     let filteredArray = state.allNoteCards.filter(function (currentNoteCard) {
         if (currentNoteCard.id == id) {
@@ -59,14 +60,26 @@ function deleteCardFromArray(id) {
     state.allNoteCards = filteredArray;
 }
 
-/*function searchCards(){
-    let input = document.querySelectorAll('').value //this will be where the user inputs their search
-    input = input.toLowerCase();
-    let notecards = document.querySelector('')
+const searchDoc = document.querySelector('#searchbutton')
+searchDoc.addEventListener('click', function (e) {
+    e.preventDefault();
 
-}*/
+   const userInput = document.querySelector('#searchbar').value.toLowerCase(); //this will be where the user inputs their search
+    let searchOptions = document.querySelectorAll('.flashcard')
+    for (let i = 0; i < searchOptions.length; i++) {
+        //console.log(searchOptions[i].innerText.includes(userInput),userInput) 
+
+       if (searchOptions[i].innerText.includes(userInput)) {
+            console.log(searchOptions[i].innerText)
+            searchOptions[i].style.borderColor = 'yellow';
+            console.log(searchOptions[i].style)
+        }
+    }
+});
 
 
+
+//test
 
 /*saveToLocalStorage = function () {
     localStorage.setItem("noteCardSets", JSON.stringify(state.notecardsets.notecards));
@@ -81,15 +94,3 @@ saveToLocalStorage(); -- save filtered array to local storage, save new note car
 };*/
 
 
-
-
-/*function generateNote(term, definition) {
-    let note = new Notecard(term, definition)
-    state.allNoteCards.push(note); //push newly created notecard to page 
-    return note;
-}*/
-/*const noteCardSets = function (notecards) {
-    //this.notecards is an array of notecard instances
-    this.notecards = notecards;
-
-};*/
