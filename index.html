@@ -28,9 +28,6 @@
                                 <input type="text" placeholder="Search..." id="searchbar">
                                 <button type="submit" id="searchbutton">Search</button>
                             </form>
-                            <div id="saveRemove">
-                                <button onclick=" printNoteCards(table)">print notes</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +41,8 @@
                             <h3 id="instructH3"><u> Add a Notecard </u></h3>
                             <p id="instructPara">Please type the term & definition into their boxes then press the
                                 <strong> add
-                                    note </strong> button to submit it.</p>
+                                    note </strong> button to submit it.
+                            </p>
                         </div>
                         <div>
                             <h3 id="instructH3"><u> Remove a Notecard </u></h3>
@@ -60,6 +58,9 @@
                                 <p id="instructPara">Please press the <strong> print note </strong> button to print the
                                     current note
                                     cards.</p>
+                                    <div id="saveRemove">
+                                        <button onclick=" printNoteCards(table)">Print Notes</button>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -75,13 +76,11 @@
                         <div id="flashcardContainer" width="200px">
                         </div>
                     </div>
-    
                 </div>
-    
-    
-                    <!-- the right side is below this comment -->
-                    <div class="rightSide">
-    
+                <!-- the right side is below this comment -->
+                <div class="rightSide">
+
+                    <div class="fixFCMaker01">
                         <aside>
                             <form id="flashCardMaker">
                                 <h1 id="h1FCMaker">Flashcard Maker</h1>
@@ -93,13 +92,16 @@
                                 <br>
                                 <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
                                 <br>
-                                <button type="submit">Add note</button>
+                                <button type="submit">Add Note</button>
                             </form>
                         </aside>
                     </div>
+                </div>
             </div>
 
-
+            <div class="copyRight">
+                <p>© MindGym Co. 2023</p>
+            </div>
 
     </main>
 
