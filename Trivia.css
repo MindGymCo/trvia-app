@@ -17,6 +17,8 @@ background-image: url(/img/Teal_Grid_BG.png);
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    padding-left: 100px;
+    padding-right: 150px;
 }
 
 @media screen and (min-width: 640px){
@@ -122,6 +124,7 @@ background-image: url(/img/Teal_Grid_BG.png);
 #instructPara {
     width: 200px;
     margin-left: 30px;
+    
 }
 
 .instructions {
@@ -131,29 +134,40 @@ background-image: url(/img/Teal_Grid_BG.png);
     border-radius: 10px;
     border-style: solid;
     border-color: black;
+    padding-left: 10px;
+    padding-right: 50px;
+    
 }
 
 .middleSection {
-    /* background-color: aliceblue; */
-    
-    
-    /* border-radius: 10px; */
-    /* border-style: solid; */
-    /* border-color: black; */
     display: flex;
     flex-direction: column;
-    /* border-style: solid; */
     width: 42%;
-    /* min-width: 20%; */
-    /* max-width: 15%; */
     height: 450px;
-    /* border-color: grey; */
     margin-top: 35px;
-    /* background-image: url("img/notecard-3.jpg"); */
-    /* overflow: auto; */
     box-sizing: border-box;
-    /* width: 300px; */
-    /* height: 170px; */
-    /* border: 1px solid; */
-    /* background-color: #ffffff; */
+    margin-right: 10px;
+}
+
+.middleAlign {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 190px; */
+    margin-right: 16px;
+}
+
+.instructionSet {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+}
+
+.instructionsStack {
+    display: flex;
+    flex-direction: column;
+}
+
+#instructID01{
+    margin: 20px;
+    padding-left: 250px;
 }
