@@ -38,7 +38,6 @@ background-image: url(/img/Teal_Grid_BG.png);
 .rightSide {
     flex: 0 1 300px;
     overflow: scroll;
-    padding-right: 50px;
     background-color: red;
 
 }
@@ -166,13 +165,12 @@ background-image: url(/img/Teal_Grid_BG.png);
     display: flex;
     flex-direction: column;
 }
- aligning-wireframe-part2
 
 #instructID01{
     margin: 20px;
     padding-left: 250px;
 
-button{
+button {
     background-color:#0a0a23;
     color: #fff;
     border:none;
@@ -183,4 +181,9 @@ button{
 button:hover{
     background-color:#002ead;
       transition: 0.7s;
+}
+
+.middleCompleteAlign {
+    display: flex;
+    justify-content: space-between;
 }
