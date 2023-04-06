@@ -12,7 +12,7 @@ const Notecard = function (term, definition) {
 };
 
 
-function showCardInTable(term, definition, id) { //add in note parameter
+function showCardInTable(term, definition, id) { 
     let notecarddiv = document.getElementById('flashcardContainer')
     let notecard = document.createElement('div');
     let termAndDefinition = document.createElement('p');
@@ -65,6 +65,7 @@ function deleteCardFromArray(id) {
     state.allNoteCards = filteredArray;
     localStorage.setItem("notecards", JSON.stringify(state.allNoteCards));
 }
+
 const searchDoc = document.querySelector('#searchbutton')
 searchDoc.addEventListener('click', function (e) {
     e.preventDefault();
