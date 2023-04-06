@@ -54,7 +54,7 @@ background-image: url(/img/Teal_Grid_BG.png);
 
 #flashcardContainer {
     margin-top: 2%;
-    margin-left: 50%;
+    /* margin-left: 50%; */
 }
 
 #saveRemove{
@@ -64,13 +64,25 @@ background-image: url(/img/Teal_Grid_BG.png);
 
 .flashcard{
     display: flex;
-    /* flex-direction: column; */
-    border-style: solid;
-    width: 25%;
+    flex-direction: column;
+    /* border-style: solid; */
+    width: 35%;
+    /* min-width: 20%; */
+    /* max-width: 15%; */
     height: 100px;
-    border-color: grey;
+    /* border-color: grey; */
     margin-top: 35px;
-    background-image: url("img/notecard.jpg");
+    background-image: url("img/notecard-3.jpg");
+    overflow: auto;
+    box-sizing: border-box;
+    width: 300px;
+    height: 170px;
+    padding: 20px;
+    border: 1px solid;
+    background-color: #FF7A59;
+    font-family: Arial;
+    margin: 10px;
+    border-radius: 10px;
 
     
 }
@@ -78,8 +90,10 @@ background-image: url(/img/Teal_Grid_BG.png);
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 200%;
+    height: auto;
     row-gap: 10px;
+    padding-right: 500%;
 }
 
 .fillerTxt{
