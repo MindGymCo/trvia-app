@@ -10,13 +10,15 @@ background-image: url(/img/Teal_Grid_BG.png);
     height: 50%;
     width: 60%;
     background-color: rgb(239, 235, 229);
-    padding: 5%;
+    padding-top: 1%;
     border: solid 5px #000000;
     border-radius: 25px;
-    margin-top: 60px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    padding-left: 100px;
+    padding-right: 150px;
 }
 
 @media screen and (min-width: 640px){
@@ -28,18 +30,15 @@ background-image: url(/img/Teal_Grid_BG.png);
 .leftSide {
     flex: 1;
     align-items: center;
-    
 }
 
 .rightSide {
     flex: 0 1 300px;
-
 }
 
 .leftFlexHeader{
     display: flex;
-    justify-content: space-evenly
-}
+    justify-content: space-evenly}
 
 #logo {
     width: 350px;
@@ -53,8 +52,15 @@ background-image: url(/img/Teal_Grid_BG.png);
 }
 
 #flashcardContainer {
-    margin-top: 2%;
-    margin-left: 50%;
+    background-color: #ffffff;
+    border: 5px solid black;
+    border-radius: 25px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 40px;
+    padding: 20px;
+    min-width: 814px;
+    min-height: 400px;
 }
 
 #saveRemove{
@@ -64,22 +70,26 @@ background-image: url(/img/Teal_Grid_BG.png);
 
 .flashcard{
     display: flex;
-    /* flex-direction: column; */
-    border-style: solid;
-    width: 25%;
+    flex-direction: column;
+    width: 35%;
     height: 100px;
-    border-color: grey;
     margin-top: 35px;
-    background-image: url("img/notecard.jpg");
-
+    background-image: url("img/notecard-3.jpg");
+    box-sizing: border-box;
+    width: 240px;
+    height: 200px;
+    border: 1px solid;
+    background-color: #ffffff;
     
 }
 #flashcardContainer{
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 210%;
+    height: auto;
     row-gap: 10px;
+    overflow-y: scroll;
 }
 
 .fillerTxt{
@@ -87,7 +97,6 @@ background-image: url(/img/Teal_Grid_BG.png);
     justify-content: center;
     left: 95px;
     top: 65px;
-    /* bottom: 65%; */
     right: 65px;
 }
 
@@ -102,6 +111,7 @@ background-image: url(/img/Teal_Grid_BG.png);
 #instructPara {
     width: 200px;
     margin-left: 30px;
+    
 }
 
 .instructions {
@@ -111,16 +121,56 @@ background-image: url(/img/Teal_Grid_BG.png);
     border-radius: 10px;
     border-style: solid;
     border-color: black;
+    padding-left: 10px;
+    padding-right: 50px;
+    
 }
-button{
-    background-color:#0a0a23;
-    color: #fff;
-    border:none;
-    border-radius:10px;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
-    margin-top: 20px;
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    height: 450px;
+    margin-top: 35px;
+    box-sizing: border-box;
+    margin-right: 10px;
 }
-button:hover{
-    background-color:#002ead;
-      transition: 0.7s;
+
+.middleAlign {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 190px; */
+    margin-right: 16px;
+}
+
+.instructionSet {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+}
+
+.instructionsStack {
+    display: flex;
+    flex-direction: column;
+}
+
+#instructID01{
+    margin: 20px;
+    padding-left: 250px;
+}
+
+.middleCompleteAlign{
+    display: flex;
+    
+}
+
+.fixFCMaker01 {
+    padding: auto;
+    padding-top: 50px;
+    padding-left: 59px;
+}
+
+.copyRight {
+    margin-top: 50px;
+    margin-left: 500px;
 }
