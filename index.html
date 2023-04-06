@@ -32,99 +32,76 @@
                     </div>
                 </div>
 
-             <div class="instructionsStack">
+                <div class="instructionsStack">
+                    <div>
+                        <h1 id="instructID01"><u>Instructions</u></h1>
+                    </div>
+                    <div class="instructionSet">
+                        <div>
+                            <h3 id="instructH3"><u> Add a Notecard </u></h3>
+                            <p id="instructPara">Please type the term & definition into their boxes then press the
+                                <strong> add
+                                    note </strong> button to submit it.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 id="instructH3"><u> Remove a Notecard </u></h3>
+                            <p id="instructPara">Press the <strong> remove note </strong> activate. Once activated,
+                                click the
+                                note card that you want removed by pressing the <strong> <i
+                                        class="fa-solid fa-trash-can"></i>
+                                </strong> icon in the lower left corner of the card.</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 id="instructH3"><u> Print a Notecard </u></h3>
+                                <p id="instructPara">Please press the <strong> print note </strong> button to print the
+                                    current note
+                                    cards.</p>
+                                    <div id="saveRemove">
+                                        <button onclick=" printNoteCards(table)">Print Notes</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <h1 id="instructID01"><u>Instructions</u></h1>
-                </div>
-                <div class="instructionSet">
-                    <div>
-                        <h3 id="instructH3"><u> Add a Notecard </u></h3>
-                        <p id="instructPara">Please type the term & definition into their boxes then press the <strong> add
-                            note </strong> button to submit it.</p></div>
-                            <div>
-                                <h3 id="instructH3"><u> Remove a Notecard </u></h3>
-                                <p id="instructPara">Press the <strong> remove note </strong> activate. Once activated, click the
-                                    note card that you want removed by pressing the <strong> <i class="fa-solid fa-trash-can"></i>
-                                    </strong> icon in the lower left corner of the card.</p>                    </div>
-                            <div>
-                    <div>
-                        <h3 id="instructH3"><u> Print a Notecard </u></h3>
-                        <p id="instructPara">Please press the <strong> print note </strong> button to print the current note
-                            cards.</p>
-                    </div>
-                    </div>
-                </div>
-             </div>
-                <div></div>
-                <div id="saveRemove">
-                    <button onclick=" printNoteCards(table)">print notes</button>
+
                 </div>
             </div>
 
-            <div class="middleAlign">
-                <div class="middleSection">
-                    <div id="flashcardContainer" width="200px">
+            <div class="middleCompleteAlign">
+                <div class="middleAlign">
+                    <div class="middleSection">
+                        <div id="flashcardContainer" width="200px">
+                        </div>
                     </div>
                 </div>
-               
-            </div>
-
-            <!-- the right side is below this comment -->
-            <div class="rightSide">
-
-                <aside>
-
-                    <form id="flashCardMaker">
-                        <h1 id="h1FCMaker">Flashcard Maker</h1>
-                        <label for="textarea1">Term:</label>
-                        <br>
-                        <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
-                        <br>
-                        <label for="textarea2">Definition:</label>
-                        <br>
-                        <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
-                        <br>
-                        <button type="submit">Add note</button>
-                    </form>
-                </aside>
-
-
                 <!-- the right side is below this comment -->
                 <div class="rightSide">
 
-                    <aside>
-                        <div class="instructions">
-                            <!-- <h2><strong>IMPORTANT:</strong> Please read the instructions below.</h2> -->
+                    <div class="fixFCMaker01">
+                        <aside>
+                            <form id="flashCardMaker">
+                                <h1 id="h1FCMaker">Flashcard Maker</h1>
+                                <label for="textarea1">Term:</label>
+                                <br>
+                                <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
+                                <br>
+                                <label for="textarea2">Definition:</label>
+                                <br>
+                                <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
+                                <br>
+                                <button type="submit">Add Note</button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </div>
 
-
-                            <h2 id="moveInstruct">Instructions</h2>
-                            
-                            <h3 id="instructH3"><u> Add a Notecard </u></h3>
-                            <p id="instructPara" >Please type the term & definition into their boxes then press the <strong> add note </strong> button to submit it.</p>
-                            
-                            <h3 id="instructH3"><u> Print Notecards </u></h3>
-                            <p id="instructPara">Please press the <strong> print cards </strong> button to print or save the current note cards.</p>
-                            
-                            <h3 id="instructH3"><u> Remove a Notecard </u></h3>
-                            
-                            <p id="instructPara">To remove the note card that you want press the <strong> <i class="fa-solid fa-trash-can"></i> </strong> icon located on the note card.</p>
-                                                    </div>
-                        <form id="flashCardMaker">
-                            <h1 id="h1FCMaker">Flashcard Maker</h1>
-                            <label for="textarea1">Term:</label>
-                            <br>
-                            <textarea id="textarea1" name="textarea1" rows="4" cols="30" required></textarea>
-                            <br>
-                            <label for="textarea2">Definition:</label>
-                            <br>
-                            <textarea id="textarea2" name="textarea2" rows="4" cols="30" required></textarea>
-                            <br>
-                            <button type="submit">Add note</button>
-                        </form>
-                    </aside>
-
-
-
+            <div class="copyRight">
+                <p>© MindGym Co. 2023</p>
+            </div>
 
     </main>
 

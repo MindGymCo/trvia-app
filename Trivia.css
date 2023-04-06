@@ -10,10 +10,10 @@ background-image: url(/img/Teal_Grid_BG.png);
     height: 50%;
     width: 60%;
     background-color: rgb(239, 235, 229);
-    padding: 5%;
+    padding-top: 1%;
     border: solid 5px #000000;
     border-radius: 25px;
-    margin-top: 60px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
@@ -30,17 +30,10 @@ background-image: url(/img/Teal_Grid_BG.png);
 .leftSide {
     flex: 1;
     align-items: center;
-    background-color: green;
-
-    
 }
 
 .rightSide {
     flex: 0 1 300px;
-    overflow: scroll;
-    padding-right: 50px;
-    background-color: red;
-
 }
 
 .leftFlexHeader{
@@ -59,11 +52,15 @@ background-image: url(/img/Teal_Grid_BG.png);
 }
 
 #flashcardContainer {
-    /* background-color: #ffffff; */
-    /* border: 5px solid darkblue; */
+    background-color: #ffffff;
+    border: 5px solid black;
+    border-radius: 25px;
     overflow-x: hidden;
-    overflow-y: scroll; /* Add this line */
-    height: 40px; /* Set a fixed height */
+    overflow-y: scroll;
+    height: 40px;
+    padding: 20px;
+    min-width: 814px;
+    min-height: 400px;
 }
 
 #saveRemove{
@@ -74,34 +71,25 @@ background-image: url(/img/Teal_Grid_BG.png);
 .flashcard{
     display: flex;
     flex-direction: column;
-    /* border-style: solid; */
     width: 35%;
-    /* min-width: 20%; */
-    /* max-width: 15%; */
     height: 100px;
-    /* border-color: grey; */
     margin-top: 35px;
     background-image: url("img/notecard-3.jpg");
-    /* overflow: auto; */
     box-sizing: border-box;
-    width: 300px;
-    height: 170px;
+    width: 240px;
+    height: 200px;
     border: 1px solid;
     background-color: #ffffff;
-    
-
-
     
 }
 #flashcardContainer{
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
-    width: 200%;
+    width: 210%;
     height: auto;
     row-gap: 10px;
     overflow-y: scroll;
-    /* padding-right: 500%; */
 }
 
 .fillerTxt{
@@ -109,7 +97,6 @@ background-image: url(/img/Teal_Grid_BG.png);
     justify-content: center;
     left: 95px;
     top: 65px;
-    /* bottom: 65%; */
     right: 65px;
 }
 
@@ -166,21 +153,24 @@ background-image: url(/img/Teal_Grid_BG.png);
     display: flex;
     flex-direction: column;
 }
- aligning-wireframe-part2
 
 #instructID01{
     margin: 20px;
     padding-left: 250px;
-
-button{
-    background-color:#0a0a23;
-    color: #fff;
-    border:none;
-    border-radius:10px;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
-    margin-top: 20px;
 }
-button:hover{
-    background-color:#002ead;
-      transition: 0.7s;
+
+.middleCompleteAlign{
+    display: flex;
+    
+}
+
+.fixFCMaker01 {
+    padding: auto;
+    padding-top: 50px;
+    padding-left: 59px;
+}
+
+.copyRight {
+    margin-top: 50px;
+    margin-left: 500px;
 }
