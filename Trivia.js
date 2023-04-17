@@ -3,31 +3,33 @@ const state = {
 
 };
 
-let lastUsedId = 0; //give an id to the note cards to keep track of which are deleted in case two identical cards are created and deleted
+let lastUsedId = 0;
+//gives an id to each card to keep track of which cards are deleted 
 
-const Notecard = function (term, definition) {
+const Notecard = function (term, definition) { //
     this.term = term;
     this.definition = definition;
-    this.id = lastUsedId++;
+    this.id = lastUsedId++; //id assigned to notecard by incrementing lastused 
 };
 
 
-function showCardInTable(term, definition, id) { 
+function showCardInTable(term, definition, id) {  
+    //display notecards on page, creates new div element w/ term and def. inside a p tag 
     let notecarddiv = document.getElementById('flashcardContainer')
     let notecard = document.createElement('div');
     let termAndDefinition = document.createElement('p');
-    let deleteicon = document.createElement('i');
-    deleteicon.className = "fa fa-trash-can";
+    let deleteicon = document.createElement('i');//trash icon created to delete card
+    deleteicon.className = "fa fa-trash-can"; 
     notecard.classList.add('flashcard');
     termAndDefinition.innerHTML = term + '\n' + definition;
-    notecard.id = id;
+    notecard.id = id; //id assigned to the div element 
     notecard.append(termAndDefinition)
     notecard.append(deleteicon);
     notecarddiv.append(notecard);
 };
 
-let form = document.getElementById('flashCardMaker');
-form.addEventListener('submit', function (e) {
+let form = document.getElementById('flashCardMaker'); //displays notecard
+form.addEventListener('submit', function (e) { 
     e.preventDefault();
     let textareaoneandtwo = form.querySelectorAll('textarea');
     let term = textareaoneandtwo[0].value
@@ -35,7 +37,7 @@ form.addEventListener('submit', function (e) {
     let newNotecard = new Notecard(term, definition);
     state.allNoteCards.push(newNotecard);
 
-    localStorage.setItem("notecards", JSON.stringify(state.allNoteCards));
+    localStorage.setItem("notecards", JSON.stringify(state.allNoteCards)); //saves object as a string to local storage
 
     showCardInTable(term, definition, newNotecard.id);
 
@@ -43,9 +45,10 @@ form.addEventListener('submit', function (e) {
 
 
 const table = document.getElementById('flashcardContainer');
+//event listener added to flashcard container to delete notecards once trash icon is clicked
 table.addEventListener('click', deleteCard);
 
-function deleteCard(event) {
+function deleteCard(event) { //called when trash icon clicked, 
     if (event.target.className == "fa fa-trash-can") {
         const noteCardElement = event.target.parentElement;
         console.log(noteCardElement.id)
@@ -57,13 +60,13 @@ function deleteCard(event) {
 
 function deleteCardFromArray(id) {
     let filteredArray = state.allNoteCards.filter(function (currentNoteCard) {
-        if (currentNoteCard.id == id) {
+        if (currentNoteCard.id == id) { //if current notecard matches specified id then it returns false and removes it
             return false
         }
         else { return true }
     })
     state.allNoteCards = filteredArray;
-    localStorage.setItem("notecards", JSON.stringify(state.allNoteCards));
+    localStorage.setItem("notecards", JSON.stringify(state.allNoteCards)); //saves filtered array to local storage
 }
 
 const searchDoc = document.querySelector('#searchbutton')
@@ -92,17 +95,16 @@ function printNoteCards(table) {
     document.body.innerHTML = originalContent;
 };
 
-function showAllNotecards() {
+function showAllNotecards() { //updates the page with notecards that are created and deleted 
     const table = document.getElementById('flashcardContainer');
-    state.allNoteCards = JSON.parse(localStorage.getItem("notecards")) || [];
-    table.innerHTML = '';
+    state.allNoteCards = JSON.parse(localStorage.getItem("notecards")) || []; //gets notecards from local storage
+    table.innerHTML = ''; //clears the table 
     console.log(state.allNoteCards)
-    for (let i = 0; i < state.allNoteCards.length; i++) {
+    for (let i = 0; i < state.allNoteCards.length; i++) { //adding notecards back to table
         let term = state.allNoteCards[i].term
         let definition = state.allNoteCards[i].definition
         let id = state.allNoteCards[i].id;
         showCardInTable(term, definition, id);
-        //localStorage.setItem('table',JSON.stringify(table))
         console.log(state.allNoteCards[i])
     }
 }
@@ -111,7 +113,7 @@ showAllNotecards();
 
 
 
- //-- save filtered array to local storage, save new note card to local storage
+
 
 
 
